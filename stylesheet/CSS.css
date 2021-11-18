@@ -1,0 +1,80 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(255, 6, 6);
+  }
+#navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid grey;
+    color: white;
+    height: 120px;
+    width: 100%;
+    min-width: 300px;
+
+}
+.item{
+    
+    border-radius: 100%;
+border: solid white;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 5;
+  text-align: center;
+  animation: MoveUpDown 3s linear infinite;
+}
+@keyframes MoveUpDown{
+  0%, 100%{
+    bottom: 0;
+  }
+  50%{
+    bottom: 50px;
+  }
+}
+.item:hover{
+    
+    background-color: grey;
+    animation: flexanimation 1s ease-out 1s infinite alternate backwards; 
+    
+}
+
+#rest{
+    background-color: blue;
+
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/under-construction.gif) ;
+  
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@keyframes flexanimation { 
+    100% { 
+      flex-grow: 5; 
+    }
+  }
+.nav1{
+
+}
+.nav2{
+
+}
+.nav3{
+
+}
+.nav4{
+
+}
+.nav5{
+
+}
+.nav6{
+
+}
+.nav7{
+
+}
