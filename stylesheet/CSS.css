@@ -1,16 +1,18 @@
 body {
     padding: 0px;
     margin: 0px;
-    background-color: rgb(255, 6, 6);
+    background-color: rgba(255, 6, 6, 0);
+    height: auto;
   }
 #navBar{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap:wrap;
     align-items: center;
     border: solid grey;
     color: white;
-    height: 120px;
+    height: 120px auto;
     width: 100%;
     min-width: 300px;
 
@@ -33,11 +35,154 @@ border: solid white;
     bottom: 50px;
   }
 }
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:260px;
+  width:300px;
+  
+}
+.container:hover .box{
+  animation-name: box_extending_retracting;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-duration: 600ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  
+}
+@keyframes box_extending_retracting {
+  0%{
+    transform: scaleX(100%);
+  }
+  100%{
+    transform: scaleX(900%);
+  }
+}
+.box{
+  height: 100px;
+  width: 150px;
+  background-color: blue;
+}
+.first{
+  background-color: red;
+}
+.secound{
+  animation-delay: 1000ms;
+}
+.main_second_container{
+  display:flex;
+  flex-direction: column;
+  justify-content:center ;
+  align-items: center;
+}
+.second_container_HI{
+  position:absolute;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  
+  
+  flex-wrap:wrap;
+  height:313px;
+  width:313px;
+}
+.second_container{
+  display:flex;
+  flex-direction: row;
+  
+  
+  flex-wrap:wrap;
+  height:313px;
+  width:313px;
+  
+  
+
+}
+
+.second_container:hover .bx-1{
+
+  animation-name: boxs_bx-1;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ;
+}
+@keyframes boxs_bx-1{
+  0%{
+    transform: translate(0%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-100%) rotate(-90deg);
+  }
+}
+.second_container:hover .bx-2{
+
+  animation-name: boxs_bx-2;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes boxs_bx-2 {
+  0%{
+    transform: translate(0%) rotate(0deg);
+  }
+  100%{
+    transform: translate(100%) rotate(90deg);
+  }
+}
+.second_container:hover .bx-3{
+
+  animation-name: boxs_bx-3;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes boxs_bx-3{
+  0%{
+    transform: translate(0%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-100%) rotate(-90deg);
+  }
+}
+.second_container:hover .bx-4{
+
+  animation-name: boxs_bx-4;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes boxs_bx-4 {
+  0%{
+    transform: translate(0%) rotate(0deg);
+  }
+  100%{
+    transform: translate(100%) rotate(90deg);
+  }
+}
+.boxs{
+  border:solid black;
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+}
+
+.bigletter{
+  font-size: medium;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 .item:hover{
     
     background-color: grey;
-    animation: flexanimation 1s ease-out 1s infinite alternate backwards; 
-    
+    animation: flexanimation  2s alternate cubic-bezier(0,-0.69, 0.94, 1.79) infinite ; 
+    animation-fill-mode:both;
+    /* animation-iteration-count: infinite; */
+
 }
 
 #rest{
@@ -53,28 +198,97 @@ border: solid white;
     background-size: cover;
 }
 @keyframes flexanimation { 
-    100% { 
-      flex-grow: 5; 
+  0%{
+    
+    flex-grow: 0;
+  }
+  100% { 
+      flex-grow: 2; 
     }
   }
-.nav1{
+.bx-2{
+  background-color: yellow;
+}
+.bx-1{
+  background-color: red;
+}
+.bx-3{
+  background-color: blue;
+}
 
+.bx-4{
+  background-color: green;
+}
+.nav1{
+  background-color:cornflowerblue
 }
 .nav2{
-
+  background-color:cyan;
 }
 .nav3{
+  background-color:darkcyan;
 
 }
 .nav4{
-
+  background-color:darkgrey;
 }
 .nav5{
-
+  background-color:darkolivegreen;
 }
 .nav6{
-
+  background-color:darkorchid;
 }
 .nav7{
+  background-color:dimgray;
+}
+
+.practice_with_media_quary{
+  display:flex;
+  flex-direction: column;
+  
+  
+  flex-wrap:wrap;
+  height:auto;
+  width:100%;
+  
+  
 
 }
+.container2{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:260px;
+  width:300px;
+  
+}
+.container2:hover .box2{
+  animation-name: box_extending_retracting2;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-duration: 600ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  
+}
+@keyframes box_extending_retracting2 {
+  0%{
+    transform: scaleX(100%);
+  }
+  100%{
+    transform: scaleX(900%);
+  }
+}
+.box2{
+  height: 100px;
+  width: 150px;
+  background-color: blue;
+}
+.first2{
+  background-color: red;
+}
+.secound2{
+  animation-delay: 1000ms;
+}
+/* simple is transition
+animation more complex */
