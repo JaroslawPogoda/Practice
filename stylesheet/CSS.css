@@ -41,7 +41,7 @@ border: solid white;
   justify-content: space-between;
   height:260px;
   width:300px;
-  
+  transform: ;
 }
 .container:hover .box{
   animation-name: box_extending_retracting;
@@ -76,7 +76,9 @@ border: solid white;
   flex-direction: column;
   justify-content:center ;
   align-items: center;
+  transform-origin: ;
 }
+
 .second_container_HI{
   position:absolute;
   display:flex;
@@ -85,7 +87,7 @@ border: solid white;
   align-items: center;
   z-index: -1;
   
-  
+  animation-fill-mode: forwards;
   flex-wrap:wrap;
   height:313px;
   width:313px;

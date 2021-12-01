@@ -1,0 +1,40 @@
+#a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    width: auto;
+}
+#b{
+    display: flex;
+    flex-direction: row;
+    
+    
+    height: 415px;
+    width:415px;
+    flex-wrap:wrap;
+}
+#c,#d,#e,#f{
+    height: 200px;
+    width: 200px;
+}
+#c{
+    background-color: blue;
+
+}
+#d{
+    background-color: brown;
+
+}
+#e{
+    background-color: coral;
+
+}
+#f{
+    background-color: rgb(204, 167, 19);
+    transform-origin: bottom right;
+}
+#b:hover #f{
+    transform: translate(100%) rotate(30deg);
+    transition: 1000ms;
+}
