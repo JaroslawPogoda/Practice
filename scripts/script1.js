@@ -1,43 +1,16 @@
-day=14;
-
-switch (((day%7)+1)) { 
-    case 1: 
-    {
-        console.log("you entered sunday");
-        break;
-    }
-    case 2: 
-    {
-        console.log("you entered Monday");
-        break;
-    }
-    case 3: 
-    {
-        console.log("you entered Tuesday");
-        break;
-    }
-    case 4: 
-    {
-        console.log("you entered Wednesday");
-        break;
-    }
-    case 5: 
-    {
-        console.log("you entered Thursday");
-        break;
-    }
-    case 6: 
-    {
-        console.log("you entered Friday");
-        break;
-    }
-    case 7: 
-    {
-        console.log("you entered Saturday");
-        break;
-    }
-    default:
-    {
-        console.log("you entered wrong day");
-    }
-}// end of switch statement
+let prompt = require("prompt-sync")();
+let number = prompt("Enter a number:");
+console.log(typeof number);
+number = Number(number);
+console.log(typeof number);
+console.log(number);
+// nested for loops
+console.log("------------------------------");
+for (let r=1; r<= number; r++) {
+  for (let c = 1; c <= number; c++) {
+    process.stdout.write(`| ${r * c} |`); //prints in the same line.
+    //console.log("it");
+  }
+  console.log();
+  console.log("______________________________");
+}

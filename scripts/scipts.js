@@ -295,3 +295,187 @@ if(!isItPrime){
 else {
     console.log(input+ " number is prime");
 }
+day=14;
+
+switch (((day%7)+1)) { 
+    case 1: 
+    {
+        console.log("you entered sunday");
+        break;
+    }
+    case 2: 
+    {
+        console.log("you entered Monday");
+        break;
+    }
+    case 3: 
+    {
+        console.log("you entered Tuesday");
+        break;
+    }
+    case 4: 
+    {
+        console.log("you entered Wednesday");
+        break;
+    }
+    case 5: 
+    {
+        console.log("you entered Thursday");
+        break;
+    }
+    case 6: 
+    {
+        console.log("you entered Friday");
+        break;
+    }
+    case 7: 
+    {
+        console.log("you entered Saturday");
+        break;
+    }
+    default:
+    {
+        console.log("you entered wrong day");
+    }
+}// end of switch statement
+
+
+
+//excercise 1 Keep pringitng integers in multiples of 3 as long as integers
+// are less than 35 using a while loop
+let num = 3;
+let limit = 35;
+let multiples = 3;
+while (num < limit) {
+  console.log(num);
+  num = num + multiples;
+}
+//excercise 2 Keep pringitng integers in multiples of 5 as long as integers
+// are less than 100 using a while loop
+let num2 = 5;
+let limit2 = 100;
+let multiples2 = 5;
+while (num2 < limit2) {
+  console.log(num2);
+  num2 = num2 + multiples2;
+}
+//excercise 3 using a while loop print integers between 0 and 20.
+//all numbers divisialbe by 2  should be bultiplied by 3 before  the are output.
+//all other integers shouldbe output.
+let init = 0;
+let limit3 = 20;
+while (init < limit3) {
+  if (init % 2 === 0) {
+    console.log(init * 3);
+  } else {
+    console.log(init);
+  }
+  init++;
+}
+//exercise 4 add the value of contoling variable and print the sum
+let sum = 0;
+let i = 1;
+let limit4 = 10;
+while (i <= limit4) {
+  sum += i;
+  console.log(`sum is ${sum} when i is ${i++}`);
+}
+console.log(sum);
+//within the given range of numbers find all the odd numbers 10-20
+let lowerLimit = 10;
+let upperLimit = 20;
+let cont = lowerLimit;
+while (cont >= lowerLimit && cont <= upperLimit) {
+  if (cont % 2 === 1) {
+    console.log(
+      `in range ${lowerLimit} to ${upperLimit} the odd number is${cont}`
+    );
+  }
+  cont++;
+}
+//excercise prime numbers with while loops
+
+let counter;
+let prompt2 = require("prompt-sync")();
+let upperLimit2 = Number(prompt2("Enter upper limit: "));
+let iterator = 9; // lower limit
+while (iterator <= upperLimit2) {
+  let inputNumber = iterator++;
+  isItPrime = true;
+  counter = 2;
+  while (counter <= Math.floor(Math.sqrt(inputNumber))) {
+    if (inputNumber % counter == 0) {
+      
+      isItPrime = false;
+      break;
+    }
+    counter++;
+  } // end of for loop
+  if (!isItPrime) {
+    console.log(inputNumber + " number is not prime");
+  } else {
+    console.log(inputNumber + " number is prime");
+  }
+}
+// input from the user in terminal
+let prompt = require("prompt-sync")();
+let number = prompt("Enter a number:");
+console.log(typeof number);
+number = Number(number);
+console.log(typeof number);
+console.log(number);
+// nested for loops
+console.log("------------------------------");
+for (let r = 1; r < 6; r++) {
+  for (let c = 1; c < 6; c++) {
+    process.stdout.write(`| ${r * c} |`); //prints in the same line.
+    //console.log("it");
+  }
+  console.log();
+  console.log("______________________________");
+}
+// bonus logical question:
+// Nando wen to the vending machne to buy himself a cookie.
+//The cookie costs $4 doolars. He paid with a $10 bill,
+// the vending machine paind him back in quarters.
+// write a loop that says how many quarters he got in return.
+const cookieCost = 4;
+let prompt3 = require("prompt-sync")();
+let userPaid = Number(
+  prompt3(" how much money was put in to pay for the cookie? :\n")
+);
+userPaid -= cookieCost;
+if (userPaid > 0) {
+  let howManyQuarters = 0;
+  for (
+    howManyQuarters = 0;
+    howManyQuarters * 0.25 < userPaid;
+    howManyQuarters++
+  ) {}
+  console.log(
+    `The user got ${howManyQuarters} quarters which is${
+      howManyQuarters * 0.25
+    }\nfrom initial money of ${userPaid + 4} the change is ${userPaid}`
+  );
+} else if (userPaid == 0) {
+  console.log(" there was no change");
+} else {
+  console.log(`Sorry you could not buy a cookie with ${userPaid + cookieCost}`);
+}
+//excercise
+let prompt = require("prompt-sync")();
+let number = prompt("Enter a number:");
+console.log(typeof number);
+number = Number(number);
+console.log(typeof number);
+console.log(number);
+// nested for loops
+console.log("------------------------------");
+for (let r=1; r<= number; r++) {
+  for (let c = 1; c <= number; c++) {
+    process.stdout.write(`| ${r * c} |`); //prints in the same line.
+    //console.log("it");
+  }
+  console.log();
+  console.log("______________________________");
+}
