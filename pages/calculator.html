@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleForCalculator.css" type="text/css" />
+    <title>running calculator</title>
+  </head>
+  <body>
+    <div class="navBar">
+        <div><button id ="add" onclick="addition()"><h2>ADD +</h2></button></li>
+        <div><button id ="subtract" onclick="subtract()"><h2>Subtracting -</h2></button></li>
+        <div><button id ="multiply" onclick="multiply()"><h2>Multiplication *</h2></button></li>
+        <div><button id ="divide" onclick="divide()"><h2>Division /</h2></button></div>
+        <div><button><h2>Exit<h2></h2></button></div>
+    </div>
+    <div>
+        <div><h3 id="prompt">Choose a method</h3></div>
+        <h3 id="displays">xcas</h3>
+    </div>
+
+
+    <input type="text" id="submitText" value="0">
+    <button type="submit" id="submit" onclick="add()" id="submit">
+      submit
+    </button>
+
+    <p id="textDisplay" value="0">0</p>
+
+    <script type="text/javascript" src="../../scripts/calculator.js"></script>
+  </body>
+</html>
