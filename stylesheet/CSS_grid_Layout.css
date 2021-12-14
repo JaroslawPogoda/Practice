@@ -1,0 +1,21 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* grid:1fr 1fr 1fr/1fr 1fr 1fr; */
+    /* grid:repeat(3,1fr)/repeat(3,1fr); */
+    grid-template-areas: 
+        "nav nav nav"
+        "category content content"
+        "category content content";
+    
+}
+.navClass{
+    grid-area: nav;
+}
+.categoryClass{
+    grid-area: category;
+}
+.contentClass{
+    grid-area: content;
+}

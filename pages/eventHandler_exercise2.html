@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handlers</title>
+</head>
+<body>
+    <title>Event Handlers</title>
+    <div>
+    <heading id="heading-1">
+        <div id="smiley-body">
+            <div id="smiley-eyes">
+                <div id="smiley-left-eye"></div>
+                <div id="smiley-right-eye"></div>
+            </div>
+            <div id="smiley-smile"></div>
+        </div>
+    </heading>
+
+    </div>
+    <div> 
+        <heading id="heading-2">heading-2</heading>
+        <input type="text" id="inputHeeadingText2" placeholder="Enter your heading displays" autocomplete="on">
+        <input type="text" id="inputHeeadingColor2" placeholder="Enter your heading background-color" autocomplete="on">
+        <button id="button" type="button" onclick="changeHeading2(document.getElementById('heading-2'),document.getElementById('inputHeeadingText2').value,document.getElementById('inputHeeadingColor2').value)" >Click me to change heading 2</bottom>
+        </div>
+        <div>
+        <heading id="heading-3">heading-3</heading>
+        <input type="text" id="inputHeeadingColumns" placeholder="Enter name your columns separated by commas" autocomplete="on">
+        <input type="text" id="inputHeeadingRows" placeholder="Enter how many rows" autocomplete="on">
+        <button id="button" type="button" onclick="changeHeading3(document.getElementById('heading-3'),document.getElementById('inputHeeadingColumns').value,document.getElementById('inputHeeadingRows').value)" >Click me to change heading 3 add table</bottom>
+            </div>
+    <script type="text/javascript" src="../scripts/eventHandlersPractice_exercise1.js"></script>
+</body>
+</html>
