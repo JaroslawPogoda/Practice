@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="company"></h1>
+<p id="p1"></p>
+<br>
+ <p id="p2"></p>
+ <br>
+ <p id='p3'></p>
+<script>
+var text="<ul>";
+      
+const COMPANY="<u>"+"ABC Enterprise Pvt. Limited"+"</u>";    
+var idnum=0;  //declared globally
+
+class Employee {
+  static count=0;
+  static empSuppcost=0;
+      constructor(fname="joe", lname="doe",deparment="unassigned", gender="unknown",email="unassigned") {
+        //instance variables or object variables
+        this.fname = fname;
+        this.lname = lname;
+        this.deparment = deparment;
+        this.gender = gender;
+        this.email = email;
+        this.id = ++idnum;
+        this.payroll=[]
+      } //closing constuctor 
+
+    static countEmployees(){
+     Employee.count++;
+      
+    }
+
+    static totalEmpsuppCost()
+    {
+      
+      Employee.empSuppcost = Employee.count*1000
+      return Employee.empSuppcost
+    } 
+    displayEmployees()
+    {
+    
+      text=text+"<li>"+this.id +"  "+this.fullname +"</li>";
+      return text;
+    }
+    filterEmployees(userInput)
+    
+    getFullName()
+    {
+      let fullname= this.fname+" "+ this.lname;
+      this.fullname= fullname;
+      
+    }
+    
+} //closing employee class
+
+
+
+document.getElementById("company").innerHTML=COMPANY;
+
+const emp1 = new Employee("James", "Ford","Marketing","M","JFord@abccorp.com");
+emp1.getFullName();
+emp1.displayEmployees();
+Employee.countEmployees();
+
+const emp2 = new Employee("Alice", "Thompsan","HR","F","AThompsan@abccorp.com");
+emp2.getFullName();
+emp2.displayEmployees();
+Employee.countEmployees();
+
+const emp3 = new Employee("Joe", "Anderson","IT","M","JAnderson@abccorp.com");
+emp3.getFullName();
+emp3.displayEmployees();
+Employee.countEmployees();
+
+const emp4 = new Employee("Jill", "Bravo","Marketing","F","JBravo@abccorp.com");
+emp4.getFullName();
+emp4.displayEmployees();
+Employee.countEmployees();
+
+const emp5 = new Employee("Bill", "Halvorsan","IT","M","BHalvorsan@abccorp.com");
+emp5.getFullName();
+emp5.displayEmployees();
+Employee.countEmployees();
+
+const emp6 = new Employee("Renee", "Valentine","Marketing","F","RValentine@abccorp.com");
+emp6.getFullName();
+emp6.displayEmployees();
+Employee.countEmployees();
+
+text=text+"</ul>";
+document.getElementById("p1").innerHTML = text;
+document.getElementById("p2").innerHTML = "Total number of employees working in this company are "+Employee.count;
+
+document.getElementById("p3").innerHTML= "Total employee supply cost is "+ 
+Employee.totalEmpsuppCost()
+
+</script>
+
+</body>
+</html>
