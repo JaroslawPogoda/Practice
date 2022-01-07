@@ -1,0 +1,7 @@
+.Data{
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 90vh;
+    background: rgb(223, 253, 255);
+    
+}
