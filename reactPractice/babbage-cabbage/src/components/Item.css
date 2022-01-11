@@ -1,0 +1,55 @@
+
+    .Item{
+    margin-top:20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30%;
+    display:grid;
+    grid-template-areas: "title "
+                        "image "
+                        "description";
+    grid-template-rows:1fr;
+    grid-template-columns:1fr;
+    border: 5px solid #f29a79;
+    background:#73956F;
+    overflow-y:hidden;
+    bottom: 150px;
+    justify-items: center;
+    min-height:230px;
+}
+img{
+    height: 35vh;
+    width: 15vw;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+.name{
+    grid-area:title;
+}
+.img{
+    grid-area:image;
+}
+.discountPrice{
+    grid-area:description;
+}
+p{
+    margin: 30px;
+}
+.Item:hover{ 
+    transform: scale(1.09);
+    transition: all 0.3s;
+}
+@media (max-width: 580px){
+    .Item{
+        width: 80%;
+    }
+    .img{
+        width: 60%;
+    }
+}
+@media (max-width: 480px){
+.img{
+    width: 80%;
+}
+}

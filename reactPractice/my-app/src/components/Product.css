@@ -1,0 +1,16 @@
+.product{
+    display:grid;
+    grid-template-areas: "img title"
+                        "img discription";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+.product-title{
+    grid-area:title;
+}
+.product-description{
+    grid-area:discription;
+}
+.product-image{
+    grid-area:img;
+}

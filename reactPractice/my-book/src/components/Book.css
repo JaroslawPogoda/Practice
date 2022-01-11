@@ -1,0 +1,33 @@
+.book{
+    margin-top:30px;
+    width: 75%;
+    display:grid;
+    grid-template-areas: "title title"
+                        "image description";
+    grid-template-rows:75px 450px;
+    grid-template-columns:20% 80%;
+    border: 5px solid #f29a79;
+    background:#f8c870;
+    overflow-y:hidden;
+    bottom: 150px;
+    justify-items: center;
+}
+img{
+    height: 35vh;
+    width: 15vw;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+.BookTitle{
+    grid-area:title;
+}
+.bookImage{
+    grid-area:image;
+}
+.description{
+    grid-area:description;
+}
+p{
+    margin: 30px;
+}

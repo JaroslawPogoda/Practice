@@ -1,0 +1,23 @@
+*{
+    color:#FCEFF9;
+    font-weight:bold;
+}
+@media (min-width: 580px) 
+{
+.itemsList{
+    display:flex;
+    justify-content: center;
+    margin-top:17vh;
+    flex-direction:row;
+    flex-wrap: wrap;
+    min-width: 460px;
+}
+}
+@media (max-width: 580px) 
+{
+.itemsList{
+    display:block;
+    margin:auto;
+    margin-top: 17vh;
+}
+}

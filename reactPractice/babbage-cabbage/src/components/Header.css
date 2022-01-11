@@ -1,0 +1,37 @@
+
+.Header{
+    position:fixed;
+    top:0;
+    height:16vh;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#48636c;
+    box-shadow: 3px 3px 5px rgb(29, 22, 29);
+    border: 1px solid #fff;
+    z-index: 4;
+}
+.ulList{
+    display:flex;
+}
+.listItem{
+    padding: 10px;
+    list-style-type: none;
+}
+.storeImgName{
+    height: 100%;
+}
+.title{
+    padding: 30px;
+}
+@media(max-width: 580px){
+    .eventName{display: none;}
+    .eventDate{display: none;}
+    .storeName{padding: 10px;}
+
+}
+@media (max-width: 290px){
+.storeImgName{display: none;
+}
+}

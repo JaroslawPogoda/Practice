@@ -5,17 +5,23 @@
                         "Img home contactArrow"
                         "Img cell nothingbot"
                         "line line line";
-    grid-template-columns: 20vw 65vw 5vw;
+    grid-template-columns: 20% 65% 5%;
     grid-template-rows: 1fr 1fr 1fr 20px;
     justify-content: center;
     align-items: center;
-    justify-items: center
+    justify-items: center;
+    opacity: 78%;
+}
+.Contact:hover{
+    transform: scale(1.08);
+    opacity: 100%;
+    transition: all 0.3s;
 }
 h3 {
     grid-area: line;
     width: 100%; 
     text-align: center; 
-    border-bottom: 2px solid #000; 
+    border-bottom: 2px solid rgba(21, 8, 139, 0.377); 
     line-height: 0.25em;
     margin: 10px 0 20px; 
     opacity: 40%;
