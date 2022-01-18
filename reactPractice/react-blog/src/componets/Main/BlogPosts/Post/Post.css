@@ -1,0 +1,19 @@
+.Post{
+    display:grid;
+    background: #b293ec;
+    width: 80vw;
+    border: 1px solid black;
+    grid-template-areas:"title author"
+                        "post post";
+    grid-template-columns: 1fr 9vw;
+    grid-template-rows: 9vh 1fr;
+}
+.Title{
+    grid-area:title;
+}
+.Username{
+    grid-area:author;
+}
+.Article{
+    grid-area:post;
+}
