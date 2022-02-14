@@ -27,6 +27,8 @@ public class HelloWorld {
 		System.out.println("please enter a sentence:");
 		String sentence=scan.nextLine();
 		System.out.println("the number of characters in the string is: "+sentence.replaceAll("\\s","").length());
+		int i = 0 ; 
+		while()
 	}
 	private static void exercise2() {
 		String stringToIterate= "Hello World";
